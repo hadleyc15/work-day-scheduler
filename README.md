@@ -22,9 +22,10 @@ After that, it was time to start adding to the js file to build the individual t
 the styling to the elements directly in the js file.  I did tweak some of the css elements to get the final look I wanted beacuse i could figure out all of the 
 necessary additions to the js file to get it exactly right.
 
-
+<img src="/assets/images/Screenshot%20(28).png" />
 
 The last thing I did was figure out the localstorage and how I wanted it to work.  I tried to add an option to delete saved tasks with an additional button, but
 after many trials and error it wasn't functional so I ended up removing it from the final application.  I did get the local storage configured to work with the click of the save button an each individual line.
 
+<img src="/assets/images/Screenshot%20(29).png" />
 
