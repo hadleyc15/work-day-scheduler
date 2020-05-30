@@ -16,7 +16,7 @@ THEN the saved events persist
 
 Given the code provided, the first thing I worked on was adding the current date and time to the top of the page.  This turned out to be fairly simple given the info provided in class.  I simply used the moment.js format of 'LLLL' to auto fill the current date and time.
 
-
+<img src="https://github.com/hadleyc15/work-day-scheduler/blob/master/assets/images/Screenshot%20(27).png />
 
 After that, it was time to start adding to the js file to build the individual time slots for the work day.  It took a lot of googling to figure out how to add
 the styling to the elements directly in the js file.  I did tweak some of the css elements to get the final look I wanted beacuse i could figure out all of the 
