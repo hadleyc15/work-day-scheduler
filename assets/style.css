@@ -28,18 +28,22 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
+  width: 75%;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
+  text-align: left;
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  width: 100px;
+  padding: 15px;
 }
 
 .past {
@@ -63,6 +67,7 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  width: 100px;
 }
 
 .saveBtn i:hover {
