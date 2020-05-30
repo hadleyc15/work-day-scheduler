@@ -1,27 +1,25 @@
-function simpleCalendar() {
-    $(document).ready(function () {
-        var dateVar = moment().format('dddd, MMMM Do, YYYY h:mm a');
-        var workHours = ["9 a.m.", "10 a.m.", "11 a.m.", "12 p.m.", "1 p.m.", "2 p.m.", "3 p.m.", "4 p.m.",
-            "5 p.m."]
+var todayDate = moment().format("dddd, MMMM Do");
+var timeNow = moment().format("H A");
+var planDay = [
+    { time: "9 AM", event: "" },
+    { time: "10 AM", event: "" },
+    { time: "11 AM", event: "" },
+    { time: "12 PM", event: "" },
+    { time: "1 PM", event: "" },
+    { time: "2 PM", event: "" },
+    { time: "3 PM", event: "" },
+    { time: "4 PM", event: "" },
+    { time: "5 PM", event: "" }
+];
 
-        //Displays current date and time at top of page
-        function currentDay() {
-            var currentDay = $("#currentDay").text(dateVar);
-            return currentDay;
-        }
+//show current day in header
+$("#currentDay").text(todayDate, timeNow);
 
-        currentDay();
+//check local storage for previous saved data from the schedule
+var checkPrevious = JSON.parse(localStorage.getItem("dayPlanner"));
 
-        //Displays the rows for the hours of the day
-        for (i = 0; i < workHours.length; i++) {
-            var row = $("<div>").addClass("row");
-            var timeCol = $("<text-area>").text(workHours[i]).addClass("hour");
-            var inputCol = $("<input>").attr("placeholder", "Enter your task here").addClass("toDo-input time-block");
-            saveBtn = $("<button>").addClass("btn btn-primary saveBtn").text("save");
-            $(row).append(timeCol).append(inputCol).append(saveBtn);
-            $("#calendar").append(row);
-        }
-    });
-
+//get previously saved data from local storage if any is found
+if (checkPrevious !== null) {
+    planDay = checkPrevious;
 }
-simpleCalendar();
+
