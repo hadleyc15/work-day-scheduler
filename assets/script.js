@@ -1,15 +1,15 @@
 var todayDate = moment().format("LLLL");
 var timeNow = moment().format("H A");
 var workDay = [
-    {time: "9AM", event: ""},
-    {time: "10AM", event: ""},
-    {time: "11AM", event: ""},
-    {time: "12PM", event: ""},
-    {time: "1PM", event: ""},
-    {time: "2PM", event: ""},
-    {time: "3PM", event: ""},
-    {time: "4PM", event: ""},
-    {time: "5PM", event: ""}
+    { time: "9AM", event: "" },
+    { time: "10AM", event: "" },
+    { time: "11AM", event: "" },
+    { time: "12PM", event: "" },
+    { time: "1PM", event: "" },
+    { time: "2PM", event: "" },
+    { time: "3PM", event: "" },
+    { time: "4PM", event: "" },
+    { time: "5PM", event: "" }
 ];
 
 //show current day in header
