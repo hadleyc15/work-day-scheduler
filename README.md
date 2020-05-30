@@ -34,3 +34,6 @@ after many trials and error it wasn't functional so I ended up removing it from 
 
 <img src="/assets/images/Screenshot%20(29).png" />
 
+Deployed URL: https://hadleyc15.github.io/work-day-scheduler/
+
+Github Repo: https://github.com/hadleyc15/work-day-scheduler
