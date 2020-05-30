@@ -24,6 +24,11 @@ necessary additions to the js file to get it exactly right.
 
 <img src="/assets/images/Screenshot%20(28).png" />
 
+I then added the code to have it check current time and color code the boxes with the provided styles based off of what time it is to display which items were
+past, present, and future.
+
+<img src="/assets/images/Screenshot%20(30).png" />
+
 The last thing I did was figure out the localstorage and how I wanted it to work.  I tried to add an option to delete saved tasks with an additional button, but
 after many trials and error it wasn't functional so I ended up removing it from the final application.  I did get the local storage configured to work with the click of the save button an each individual line.
 
